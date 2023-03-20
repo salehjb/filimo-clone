@@ -1,0 +1,118 @@
+:root {
+    --background-color: #151515;
+    --special-orange: #f89f3e;
+    --special-green: #1cb561;
+    --special-green-dark: #17924e;
+    --special-gray: #474747;
+}
+
+.inner-wrapper {
+    max-width: 1440px;
+    padding: 0 100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.subscription-link {
+    background-color: var(--special-green);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    transition: background-color 0.2s;
+}
+
+.subscription-link:hover {
+    background-color: var(--special-green-dark);
+}
+
+.benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 50px;
+}
+
+.benefits li {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 0 10px;
+    color: #e0e0e0;
+}
+
+.benefits li i {
+    color: var(--special-green);
+    font-size: 1.8rem;
+    background-color: rgba(28, 181, 97, 0.25);
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 2.1rem;
+    font-family: "IranSansMedium";
+}
+
+.description {
+    font-size: 1.3rem;
+    color: #e0e0e0;
+    text-align: justify;
+    line-height: 2;
+}
+
+.devices {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    margin-top: 15px;
+}
+
+.devices li {
+    font-size: 1.4rem;
+    display: flex;
+    gap: 0 10px;
+}
+
+.devices li i {
+    font-size: 2.7rem;
+    color: var(--special-gray);
+}
+
+.devices li .device-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+}
+
+.devices li .device-detail .devices-name {
+    color: var(--special-gray);
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .inner-wrapper {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .benefits li {
+        font-size: 1.2rem;
+    }
+    
+    .title {
+        font-size: 1.9rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+}
